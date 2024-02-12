@@ -1,12 +1,15 @@
 # python_rag
- langchain+openai+chromadb构建
+ 基于langchain+openai+chromadb构建
+ 
  需要redis list提供文本数据URL
- 运行：python mian.py
- 需要openai_api_key
+ 
+ 运行：python mian.py，需要openai_api_key
+ 
  提供http服务post访问，端口为3678，数据格式为：
 {
     "user_content": "LangChain是什么？"
 }
+
 返回结果：
 {
     "code":1,"msg":"success",
